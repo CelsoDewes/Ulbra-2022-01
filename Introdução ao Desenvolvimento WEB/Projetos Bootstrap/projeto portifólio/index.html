@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDE Aula 12</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+           
+            <nav class="navbar navbar-expand-sm bg-light">
+                <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <h5><a class="nav-link text-primary" href="#">CELSO DEWES</a></h5>
+                      </li>
+                   </ul>
+                   <ul class="navbar-nav nav justify-content-end">
+                      <li class="nav-item">
+                      <a class="nav-link" href="#img">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contatos">Contatos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#trabalhos">Trabalhos</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+    </div>    
+
+    <header  class="container-fluid bg-primary text-light text-center p-3">
+        <h1>Quem sou eu?</h1>
+        <div class="container pt-4 float-center rounded-circle">
+            <img id="img" class="rounded-circle img-fluid"  src="assets/img/foto1.jpeg" alt="">
+        </div>
+        <p class="container-fluid p-3">Eu sou Celso Dewes, Estudante de Analise e desenvolvimento de sistemas</p>
+    </header>
+    <div id="contatos" class="container-fluid text-center bg-dark text-white">
+        <div class="row">
+            <h4>Como me encontrar?</h4>
+                <p>Você consegue me encontrar nas seguintes redes...</p>
+                <div class="container-fluid text-center col-3 p-2">
+                    <a href="https://www.instagram.com/celsodewes/" target="_blank">
+                        <img class="icones" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbnSGNpuOds_t3cS1jy515f-8Ds7rHMl89Vw&usqp=CAU">
+                    </a>
+                </div>
+                <div class="container-fluid text-center col-3 p-2">
+                    <a href="https://www.linkedin.com/in/celsodewes/" target="_blank">
+                        <img class="icones" src="data:image/png;base64,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">
+                    </a>       
+                </div>
+                <div class="container-fluid text-center col-3 p-2">
+                    <a href="https://github.com/CelsoDewes" target="_blank">
+                        <img class="icones" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduHwLUzYYcR7wU0OcFS2VSVDxIP8efho7Vg&usqp=CAU">
+                    </a>
+                </div>
+                <div class="container-fluid text-center col-3 p-2">
+                    <a href="https://twitter.com/CelsoDewes" target="_blank">
+                        <img class="icones" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKLGiVYonZCgvmEB-RnPXK6tDc9P2G-ZB-Ag&usqp=CAU">
+                    </a>
+                </div>
+        </div>
+    </div>
+            
+    <div id="trabalhos" class="container text-center p-2">       
+        <div class="row">
+            <h2>Quais são os meus principais trabalhos?</h2>
+                <div class="col-3 p-2 text-body">
+                        
+                        <p>Trabalho em HTML e css para efetuar um curriculo.</p>
+                        <a href="https://github.com/CelsoDewes/Ulbra-2022-01/tree/master/Introdu%C3%A7%C3%A3o%20ao%20Desenvolvimento%20WEB/Projeto%20Curriculo">
+                            <img class="imgTrabalho rounded" src="assets/img/trabalho1.png" alt="projeto curriculo">
+                        </a>                   
+                </div>
+                <div class="col-1"></div>
+                <div class="col-3 p-2 text-body">
+                    
+                    <p>Trabalho em HTML e css para efetuar uma tabela de campeonato.</p>
+                    <a href="https://github.com/CelsoDewes/Ulbra-2022-01/tree/master/Introdu%C3%A7%C3%A3o%20ao%20Desenvolvimento%20WEB/Projeto%20Tabela%20Campeonato">
+                        <img class="imgTrabalho rounded" src="assets/img/trabalho2.png" alt="">
+                    </a>                            
+                </div>
+                <div class="col-1"></div>
+                <div class="col-3 p-2 text-body">
+                    
+                    <p>Trabalho em HTML e css, utilizando a função TABLES.</p>
+                    <a href="https://github.com/CelsoDewes/Ulbra-2022-01/tree/master/Introdu%C3%A7%C3%A3o%20ao%20Desenvolvimento%20WEB/Projeto%20Tables">
+                        <img class="imgTrabalho rounded" src="assets/img/trabalho3.png" alt="">
+                    </a>                                   
+                </div>
+        </div>
+    </div> 
+    <div class="container col-12 p-5"></div>
+
+    <footer class="container-fluid bg-primary text-light text-center p-1">
+        <h6>copyright© eu mesmo</h6>
+    </footer>
+    
+
+</body>
+</html>
